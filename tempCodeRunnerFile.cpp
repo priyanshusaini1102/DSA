@@ -1,2 +1,2 @@
-ecision(key,precision);
-    cout<<"Answer : "<<ans<<endl;
+(arr,size,d);
+    cout<<"\nAnswer : "<<answer<<endl;

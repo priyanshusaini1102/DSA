@@ -235,6 +235,7 @@ void pairSum(int arr[], int size, int sum){
     printArray(ans,ansCounter);
 }
 
+//Optimised Pair Sum
 void OPpairSum(int arr[], int size, int targetSum){
     int ans[100] = {0};
     int ansCounter = 0;
@@ -334,8 +335,6 @@ void OPtripletSum(int arr[], int size, int target){
 
     printArray(ans,ansCounter);
 }
-//Pending 
-//sort(0,1,2) like sort(0,1)
 
 void sort012(int arr[], int size){
     int i=0;
