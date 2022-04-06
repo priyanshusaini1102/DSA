@@ -1,2 +1,2 @@
-(arr,size,d);
-    cout<<"\nAnswer : "<<answer<<endl;
+
+    // cout<<"value at Null pointer : "<<*nullPtr<<endl;

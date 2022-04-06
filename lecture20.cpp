@@ -97,7 +97,6 @@ int main(){
     
     vector<int> v = getVector();
     
-
     //INPUTS//
 
     //💁‍♂️Ques-90 : To get the value of m.
@@ -133,10 +132,9 @@ int main(){
     // printVector(merge);
 
     //🙋‍♂️Ques-93 : To move zeros to right.
-    vector<int> res = moveZeros(v);
-    printVector(res);
+    // vector<int> res = moveZeros(v);
+    // printVector(res);
 
     cout << endl;
-
 
 }
