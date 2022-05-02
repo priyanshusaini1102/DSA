@@ -126,7 +126,6 @@ int binarySearchForTriplets(int arr[],int i, int start, int end, int d){
     return -1;
 }
 
-
 // 🙋‍♂️Ques-81 ✅ : Allocate Books using Binary Search : Link -> https://bit.ly/3MLUnC7
 int allocateBooks(int arr[], int size, int m){
     int start=0, sum=0;

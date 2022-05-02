@@ -42,8 +42,6 @@ void bubbleSort(int a[],int size){
     }
 }
 
-
-
 int main(){
     cout<<endl<<"~~~~~~~~START~~~~~~~~~~"<<endl<<endl;
     cout<<"Run successfully"<<endl;

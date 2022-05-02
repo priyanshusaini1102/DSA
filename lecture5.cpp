@@ -100,7 +100,5 @@ int main(){
     int a = 2;
     cout << a <<endl;
     cout << (a&11);
-    
-
 
 }

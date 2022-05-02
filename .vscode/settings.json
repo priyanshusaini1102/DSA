@@ -4,7 +4,10 @@
         "iostream": "cpp",
         "utility": "cpp",
         "vector": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "exception": "cpp",
+        "memory": "cpp",
+        "tuple": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
