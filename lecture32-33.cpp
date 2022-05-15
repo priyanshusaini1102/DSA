@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+//🙋‍♂️Ques-116 ✅ : reach destination to n  using recursion.
 void reachDestinaton(int src, int dest){
     cout<<src<<" reached and remaining "<<dest-src<<" more to reach."<<endl;
     if(src >= dest){
@@ -12,6 +12,15 @@ void reachDestinaton(int src, int dest){
     return reachDestinaton(++src, dest);
 }
 
+//🙋‍♂️Ques-117 ✅ : calculate N th term of fibonacci series.
+int fibonacci(int n ){
+    if(n==0) return 0;
+    if(n==1) return 1;
+
+    return (fibonacci(n-1)+fibonacci(n-2));
+}
+
+//🙋‍♂️Ques-118 ✅ : count the total number of ways to reach N th stair. 
 int stairDistinctWays(int n){
     if(n == 0) return 1;
 
@@ -23,6 +32,7 @@ int stairDistinctWays(int n){
 
 }
 
+//🙋‍♂️Ques-119 ✅ : print digits in alphabets in same order.
 void printInAlphabets(int n, string arr[]){
 
     if(n == 0){
@@ -36,6 +46,9 @@ void printInAlphabets(int n, string arr[]){
     cout<<arr[digit]<<" ";
 }
 
+//~~~~~~~~~~~~lecture-32 complete~~~~~~~~~~~~~~~
+
+//🙋‍♂️Ques-120 ✅ : to check the given array is sorted or not.
 bool isSorted(int *arr, int size){
 
     //BASE conditions
@@ -46,7 +59,7 @@ bool isSorted(int *arr, int size){
     return isSorted(arr+1, size-1);
 
 }
-
+//🙋‍♂️Ques-121 ✅ : to calculate the total sum of all the elements in the array.
 int getSum(int *arr, int size){
     //base case
     if(size==1) return arr[0];
@@ -54,7 +67,7 @@ int getSum(int *arr, int size){
     // iteration call
     return arr[0]+getSum(arr+1, size-1);
 }
-
+//🙋‍♂️Ques-122 ✅ : linear search in array using recursion.
 bool linearSearch(int *arr, int size, int key){
     
     if(size == 0) return false;
@@ -64,27 +77,7 @@ bool linearSearch(int *arr, int size, int key){
     return linearSearch(arr+1, size-1,key);
 }
 
-int fibonacci(int n ){
-    if(n==0) return 0;
-    if(n==1) return 1;
-
-    return (fibonacci(n-1)+fibonacci(n-2));
-}
-
-int binarySearch(int start, int end, int arr[], int key){
-    int mid = start + (end-start)/2;
-
-    if(start>end) return -1;
-
-    if(key == arr[mid]) return mid;
-
-    if(arr[mid] < key){
-        return binarySearch(mid+1, end, arr,key);
-    }else{
-        return binarySearch(start, mid-1, arr,key);
-    }
-
-}
+// lecture 12-15 question using recursion. - lecture33revision.cpp
 
 int main(){
 
@@ -121,18 +114,6 @@ int main(){
     //     cout<<fibonacci(i)<<" ";
     // }
 
-    // int arr[3] = {1,11,111};
-    // int size = 3;
-    // int key;
-    // cout<<"Enter the value of key : ";cin>>key;
-
-    // int foundAt = binarySearch(0,size-1, arr,key);
-    
-    // if(foundAt == -1){
-    //     cout<<key<<" is not found in the array."<<endl;
-    // }else{
-    //     cout<<key<<" is found in the array at "<<foundAt<<endl;
-    // }
 
 
 }

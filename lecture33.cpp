@@ -162,7 +162,7 @@ double sqrtWithPrecision(int key, int precision){
     return preciseAns;
 }
 
-bool isPossibleAllocation(int arr[], int n,int m, int mid){
+bool isPossibleAllocation(int arr[], int n,int s, int mid){
     int student = 1;
     int sum = 0;
     for(int i = 0; i<n; i++){
@@ -172,15 +172,12 @@ bool isPossibleAllocation(int arr[], int n,int m, int mid){
         }else{
             student++;
             sum=arr[i];
-            if(arr[i]>mid || student>m) return false;
+            if(arr[i] > mid || student > s) return false;
         }
     }
     cout<<"\n student:"<<student<<"\t mid:"<<mid<<endl;
-    if(student <= m){
-        return true;
-    }else{
-        return false;
-    }
+
+    return true;
 }
 
 int bookAllocate(int arr[], int n, int m, int start, int end, int ans = -1){
